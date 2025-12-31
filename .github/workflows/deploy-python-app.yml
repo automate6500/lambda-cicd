@@ -20,6 +20,10 @@ jobs:
   Integrate:
     name: Integrate
     uses: ./.github/workflows/integrate-python-app.yml
+    permissions:
+      id-token: write
+      contents: read
+      checks: write
 
   # ------------------------------------------------------------
   # Delivery: build lambda.zip and publish as an artifact
