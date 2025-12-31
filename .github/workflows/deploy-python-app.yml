@@ -21,7 +21,6 @@ jobs:
     name: Integrate
     uses: ./.github/workflows/integrate-python-app.yml
     permissions:
-      id-token: write
       contents: read
       checks: write
 
